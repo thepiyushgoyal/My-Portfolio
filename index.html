@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Personal Portfolio</title>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png"  class="logo" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My work</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i id="bar" class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Data Analyst</p>
+                <h1>Hi, I'm <span>Piyush</span><br>from India</h1>
+            </div>
+        </div>
+        
+
+
+    </div>    
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/aboutmebg.png">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! I'm Piyush, a passionate and detail-oriented data analyst with a strong interest in deriving meaningful insights from data to solve real-world problems. I thrive on exploring data and uncovering patterns that drive impactful decisions.</p>
+                    <p>I have recently completed my Bachelor of Technology in Computer Science and Engineering from MIMIT, Malout, where I developed a solid foundation in analytical thinking and problem-solving. My academic journey has fueled my curiosity for data and inspired me to pursue a career in the dynamic field of data analytics.</p>
+                    <p>Outside of work, I enjoy learning about emerging trends in technology and honing my analytical skills.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills </p>
+                        <p class="tab-links" onclick="openTab('education')">Education </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <h2 class="skills-title">Technical Skills</h2>
+                        <div class="skills-grid">
+                            <div class="skill">
+                                <img src="images/python.png" alt="HTML">
+                                <p>Python</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/html.png" alt="CSS">
+                                <p>HTML</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/js.png" alt="JavaScript">
+                                <p>JavaScript</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/css.png" alt="Python">
+                                <p>CSS</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/sql.png" alt="SQL">
+                                <p>SQL</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/cpp.png" alt="Power BI">
+                                <p>C++</p>
+                            </div>
+                            <!-- Add more skills as needed -->
+                        </div>
+
+                        <!-- Tools I Use Section -->
+                        <h2 class="skills-title">Tools & Libraries I Use</h2>
+                        <div class="skills-grid">
+                            <div class="skill">
+                                <img src="images/vscode.png" alt="VS Code">
+                                <p>VS Code</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/powerbi.png" alt="Postman">
+                                <p>Power BI</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/mysql.png" alt="MongoDB Atlas">
+                                <p>My SQL</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/github.png" alt="Netlify">
+                                <p>GitHub</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/reactjs.png" alt="Vercel">
+                                <p>ReactJs</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/numpy.png" alt="GitHub">
+                                <p>NumPy</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/pandas.png" alt="GitHub">
+                                <p>Pandas</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/tensorflow.png" alt="GitHub">
+                                <p>Tensorflow</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/excel.png" alt="GitHub">
+                                <p>Ms-Excel</p>
+                            </div>
+                            <div class="skill">
+                                <img src="images/tableau.png" alt="GitHub">
+                                <p>Tableau</p>
+                            </div>
+                            <!-- Add more tools here -->
+                        </div>
+                            
+                        
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2025</span><p>Malout Institue of Management and Information Technology, Malout</p><p> B.Tech in Computer Science</p></li>
+                            <li><span>2020 - 2021</span><p>BMS Public School, Sri Muktsar Sahib</p><p> 12th (Non - Medical)</p></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/myworkblinkit.png" alt="">
+                    <div class="layer">
+                        <h3>Blinkit Sales Analysis Dashboard</h3>
+                        <p>The Blinkit Sales Analysis Dashboard is an interactive and insightful data visualization project created using Power BI. This dashboard focuses on analyzing sales performance, trends, and customer behavior for Blinkit, providing stakeholders with actionable insights for strategic decision-making.</p>
+                        <a href="https://github.com/thepiyushgoyal/Blinkit-Sales-Dashboard"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/myworkcelebrity.png" alt="">
+                    <div class="layer">
+                        <h3>Celebrity Image Classifier</h3>
+                        <p>The Celebrity Image Classifier is a machine learning-based web application that classifies images of five different celebrities. It leverages a trained machine learning model, a Flask-based backend, and an interactive frontend for an intuitive user experience. The classifier helps demonstrate image recognition and classification capabilities using modern technologies.</p>
+                        <a href="https://github.com/thepiyushgoyal/Celebrity-Image-Classification"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/myworkroad.png" alt="">
+                    <div class="layer">
+                        <h3>Road Accident Analysis Dashboard</h3>
+                        <p>the Road Accident Analysis Dashboard, which visualizes road accident data to provide insights into trends, patterns, and critical statistics. Built using Tableau, this dashboard helps in supporting road safety analysis and decision-making.</p>
+                        <a href="https://github.com/thepiyushgoyal/Road-Accident-Dashboard"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/thepiyushgoyal" class="btn">See More</a>
+        </div>
+    </div>
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-regular fa-envelope"></i>Piyushgoyal833@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>7710411464</p>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://github.com/thepiyushgoyal"><i class="fa-brands fa-github"></i></a>
+                        <a target="_blank" href="https://www.instagram.com/piyushgoyall/"><i class="fa-brands fa-instagram"></i></a>
+                        <a target="_blank" href="https://twitter.com/piyushgoyall"><i class="fa-brands fa-twitter"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/piyushgoyal01"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="source/ResumePiyushGoyal.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="name" placeholder="Your Name" required>
+                        <input type="email" name="Email" id="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p></p>copyright  &copy; Reserved By Piyush.
+        </div>
+    </div>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyeN-XKOao2RhDEDpqRQCPcA2Zrn46LzhPgeV40UKKRTn9LJuw-RznCJChd13inxaIm/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg')
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+          </script>
+    <script src="https://kit.fontawesome.com/7cb715e351.js" crossorigin="anonymous"></script>
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
+
