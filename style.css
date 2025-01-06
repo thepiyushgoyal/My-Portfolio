@@ -90,6 +90,32 @@ nav ul li a:hover::after {
   color: #ff004f;
 }
 
+/* text annimation */
+.typewriter-container {
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.typewriter-text {
+  display: inline-block;
+  line-height: 0.8;
+  overflow: visible;
+  white-space: nowrap;
+  border-right: 3px solid #333;
+  box-sizing: border-box;
+  animation: blink 0.7s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
 /* wrapper */
 .wrapper{
   z-index: 3;

@@ -20,12 +20,31 @@ function closemenu(){
   sideMenu.style.right = "-200px";
 }
 /......................................../ 
-// const subscribe = document.querySelector(".login-btn")
-// const iconClose = document.querySelector(".icon-close")
-// const wrapper = document.querySelector(".wrapper")
-// subscribe.addEventListener('click',()=>{
-//   wrapper.classList.add('active-popup')
-// })
-// iconClose.addEventListener('click',()=>{
-//   wrapper.classList.remove('active-popup')
-// })
+const roles = ["Data Analyst", "Data Scientist", "Business Analyst"];
+let index = 0;
+let charIndex = 0;
+const typewriterElement = document.getElementById("typewriter");
+
+function typeText() {
+  if (charIndex < roles[index].length) {
+    typewriterElement.textContent += roles[index].charAt(charIndex);
+    charIndex++;
+    setTimeout(typeText, 150);
+  } else {
+    setTimeout(eraseText, 1000);
+  }
+}
+
+function eraseText() {
+  if (charIndex > 0) {
+    typewriterElement.textContent = roles[index].substring(0, charIndex - 1);
+    charIndex--;
+    setTimeout(eraseText, 100);
+  } else {
+    index = (index + 1) % roles.length;
+    setTimeout(typeText, 500);
+  }
+}
+
+// Start the typing effect
+typeText();
